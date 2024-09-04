@@ -1,0 +1,64 @@
+.personagem{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    width: 100%;
+}
+
+.personagens{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.personagens .nome{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: black;
+}
+
+.personagens img{
+    width: 100px;
+}
+
+.personagens .detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.personagens .detail .raca{
+    padding-bottom: 5px;
+}
+
+.personagens .descricao{
+    padding: 1rem;
+    width: 100%;
+
+    display: flex;
+}
+
+@media screen and (max-width: 660px){
+    .personagens .detail{
+        flex-direction: column;
+    }
+
+    .personagens img{
+        width: 100%;
+    }
+        
+    .personagem{
+        grid-template-columns: 1fr;
+    }
+}
